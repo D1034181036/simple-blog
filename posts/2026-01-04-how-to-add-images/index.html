@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/style.css">
+    <title>如何在文章中加入圖片</title>
+</head>
+<body>
+    <p><a href="../index.html">&larr; 返回列表</a></p>
+    <article>
+        <header>
+            <h2>如何在文章中加入圖片</h2>
+            <time>2026-01-04</time>
+        </header>
+
+        <h3>步驟一：準備圖片檔案</h3>
+        <p>將你的圖片檔案放入文章資料夾中，與 <code>index.html</code> 放在同一層。</p>
+        <p><strong>範例：</strong>如果你的文章資料夾是 <code>2026-01-04-how-to-add-images/</code>，將圖片（如 <code>photo.jpg</code>）直接放入該資料夾中。</p>
+
+        <hr>
+
+        <h3>步驟二：使用 img 標籤</h3>
+        <p>在 HTML 檔案中，使用 <code>&lt;img&gt;</code> 標籤來顯示圖片：</p>
+        <pre>&lt;img src="你的圖片檔名.jpg" alt="圖片說明"&gt;</pre>
+        
+        <p><strong>範例：</strong></p>
+        <pre>&lt;img src="photo.jpg" alt="美麗的風景照片"&gt;</pre>
+
+        <hr>
+
+        <h3>img 標籤屬性說明</h3>
+        <h4>必要屬性</h4>
+        <ul>
+            <li><strong>src：</strong>圖片檔案的路徑
+                <ul>
+                    <li>同一資料夾：直接寫檔名，如 <code>src="image.jpg"</code></li>
+                    <li>子資料夾：使用相對路徑，如 <code>src="images/photo.jpg"</code></li>
+                </ul>
+            </li>
+            <li><strong>alt：</strong>圖片的替代文字
+                <ul>
+                    <li>當圖片無法顯示時會顯示此文字</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>可選屬性</h4>
+        <ul>
+            <li><strong>width：</strong>設定圖片寬度（單位為像素）
+                <ul>
+                    <li>範例：<code>width="500"</code> 設定寬度為 500 像素</li>
+                </ul>
+            </li>
+            <li><strong>height：</strong>設定圖片高度（單位為像素）
+                <ul>
+                    <li>範例：<code>height="300"</code> 設定高度為 300 像素</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p><strong>注意：</strong>通常只設定 width 或 height 其中一個，讓圖片按比例縮放，避免圖片變形。</p>
+
+        <hr>
+
+        <h3>小提示</h3>
+        <ul>
+            <li>圖片檔名建議使用英文和連字號，避免使用中文、空格和特殊符號</li>
+            <li>壓縮圖片可以加快網頁載入速度</li>
+        </ul>
+
+    </article>
+</body>
+</html>

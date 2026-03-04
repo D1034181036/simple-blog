@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/style.css">
+    <title>如何新增一篇文章</title>
+</head>
+<body>
+    <p><a href="../index.html">&larr; 返回列表</a></p>
+    <article>
+        <header>
+            <h2>如何新增一篇文章</h2>
+            <time>2026-01-03</time>
+        </header>
+
+        <h3>步驟一：複製 Template</h3>
+        <ul>
+            <li>找到 <code>posts/_template/</code> 資料夾</li>
+            <li>複製整個 <code>_template</code> 資料夾</li>
+        </ul>
+
+        <hr>
+
+        <h3>步驟二：重新命名資料夾</h3>
+        <ul>
+            <li>格式：<code>YYYY-MM-DD-文章標題</code></li>
+            <li>範例：<code>2026-01-03-how-to-create-a-post</code></li>
+            <li>使用英文和連字號，避免空格和特殊符號</li>
+        </ul>
+
+        <hr>
+
+        <h3>步驟三：修改文章內容</h3>
+        <p>開啟新資料夾中的 <code>index.html</code>，檔案中有 <code>&lt;!-- 修改這裡 --&gt;</code> 注釋標示，依照指示填寫：</p>
+        <ul>
+            <li><strong>&lt;title&gt;</strong> 和 <strong>&lt;h2&gt;</strong>：填入文章標題</li>
+            <li><strong>&lt;time&gt;</strong>：填入文章日期（格式：YYYY-MM-DD）</li>
+            <li><strong>&lt;article&gt;</strong> 內容：撰寫你的文章內容</li>
+        </ul>
+        <p>參考 <a href="../2026-01-02-html-cheat-sheet/index.html">HTML 常用標籤</a> 來使用各種 HTML 元素</p>
+
+        <hr>
+
+        <h3>步驟四：更新文章列表</h3>
+        <p>開啟 <code>posts/index.html</code>，在 <code>&lt;ul&gt;</code> 列表的<strong>最上方</strong>加入：</p>
+        <pre>&lt;li&gt;
+    &lt;time&gt;日期&lt;/time&gt;
+    &lt;a href="資料夾名稱/index.html"&gt;文章標題&lt;/a&gt;
+&lt;/li&gt;</pre>
+
+        <hr>
+
+        <h3>步驟五：更新 RSS Feed</h3>
+        <p>開啟根目錄下的 <code>feed.xml</code>，在第一個 <code>&lt;item&gt;</code> 之前加入新文章資訊，讓訂閱者能收到最新文章通知。</p>
+        <p>詳細說明請參考：<a href="../2026-01-05-how-to-update-rss-feed/index.html">如何更新 RSS Feed</a></p>
+    </article>
+</body>
+</html>

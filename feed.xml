@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>廢文小天地</title>
+        <link>https://yoursite.com/</link>
+        <description>分享吃飯、睡覺、打東東的點點滴滴</description>
+        <language>zh-Hant</language>
+        <atom:link href="https://yoursite.com/feed.xml" rel="self" type="application/rss+xml"/>
+        
+        <item>
+            <title>如何更新 RSS Feed</title>
+            <link>https://yoursite.com/posts/2026-01-05-how-to-update-rss-feed/index.html</link>
+            <guid>https://yoursite.com/posts/2026-01-05-how-to-update-rss-feed/index.html</guid>
+            <pubDate>Sun, 05 Jan 2026 00:00:00 +0800</pubDate>
+            <description>學習如何手動維護和更新部落格的 RSS Feed，讓讀者可以訂閱你的最新文章。</description>
+        </item>
+        
+        <item>
+            <title>如何在文章中加入圖片</title>
+            <link>https://yoursite.com/posts/2026-01-04-how-to-add-images/index.html</link>
+            <guid>https://yoursite.com/posts/2026-01-04-how-to-add-images/index.html</guid>
+            <pubDate>Sat, 04 Jan 2026 00:00:00 +0800</pubDate>
+            <description>學習如何在文章中正確加入圖片，包含 img 標籤的使用方法和屬性說明。</description>
+        </item>
+        
+        <item>
+            <title>如何新增一篇文章</title>
+            <link>https://yoursite.com/posts/2026-01-03-how-to-create-a-post/index.html</link>
+            <guid>https://yoursite.com/posts/2026-01-03-how-to-create-a-post/index.html</guid>
+            <pubDate>Fri, 03 Jan 2026 00:00:00 +0800</pubDate>
+            <description>從複製模板到更新文章列表，完整的文章新增流程教學。</description>
+        </item>
+        
+        <item>
+            <title>HTML 常用標籤</title>
+            <link>https://yoursite.com/posts/2026-01-02-html-cheat-sheet/index.html</link>
+            <guid>https://yoursite.com/posts/2026-01-02-html-cheat-sheet/index.html</guid>
+            <pubDate>Thu, 02 Jan 2026 00:00:00 +0800</pubDate>
+            <description>HTML 常用標籤速查表，幫助你快速撰寫文章內容。</description>
+        </item>
+        
+        <item>
+            <title>我的第一篇貼文</title>
+            <link>https://yoursite.com/posts/2026-01-01-first-post/index.html</link>
+            <guid>https://yoursite.com/posts/2026-01-01-first-post/index.html</guid>
+            <pubDate>Wed, 01 Jan 2026 00:00:00 +0800</pubDate>
+            <description>歡迎來到廢文小天地！這是我的第一篇部落格文章。</description>
+        </item>
+    </channel>
+</rss>
