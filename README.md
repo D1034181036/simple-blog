@@ -7,6 +7,7 @@
 ```
 simple-blog/
 ├── index.html                              # 首頁
+├── feed.xml                                # RSS Feed
 ├── assets/                                 # 放全站通用的資源
 │   └── style.css                           # 網站樣式
 └── posts/                                  # 文章目錄
@@ -33,3 +34,4 @@ simple-blog/
 2. **修改資料夾名稱**：重新命名為 `YYYY-MM-DD-文章標題` 格式
 3. **修改文章內容**：編輯 `index.html` 中的標題、日期和內容
 4. **更新文章列表**：在 `posts/index.html` 中加入新文章的連結
+5. **更新 RSS Feed**：在 `feed.xml` 中加入新文章的項目

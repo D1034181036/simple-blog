@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/style.css">
+    <title>如何更新 RSS Feed</title>
+</head>
+<body>
+    <p><a href="../index.html">&larr; 返回列表</a></p>
+    <article>
+        <header>
+            <h2>如何更新 RSS Feed</h2>
+            <time>2026-01-05</time>
+        </header>
+
+        <h3>什麼是 RSS Feed？</h3>
+        <p>RSS（Really Simple Syndication）是一種網站內容訂閱格式，讓讀者可以透過 RSS 閱讀器訂閱你的部落格，自動接收最新文章通知。</p>
+
+        <hr>
+
+        <h3>RSS Feed 檔案位置</h3>
+        <p>本部落格的 RSS feed 檔案位於根目錄：<code>feed.xml</code></p>
+        <p>讀者可以透過此連結訂閱你的部落格，例如：<code>https://你的網域/feed.xml</code></p>
+
+        <hr>
+
+        <h3>首次使用：設定網域名稱和部落格資訊</h3>
+        <ol>
+            <li>
+                <p>部落格標題：修改為你的部落格名稱</p>
+                <pre>&lt;title&gt;廢文小天地&lt;/title&gt;</pre>
+            </li>
+            <li>
+                <p>部落格網址：修改為你的部落格網址</p>
+                <pre>&lt;link&gt;https://yoursite.com/&lt;/link&gt;</pre>
+            </li>
+            <li>
+                <p>部落格描述：修改為你的部落格簡介</p>
+                <pre>&lt;description&gt;分享吃飯、睡覺、打東東的點點滴滴&lt;/description&gt;</pre>
+            </li>
+            <li>
+                <p>RSS feed 網址：修改為你的 RSS feed 網址</p>
+                <pre>&lt;atom:link href="https://yoursite.com/feed.xml" .../&gt;</pre>
+            </li>
+        </ol>
+
+        <hr>
+
+        <h3>如何更新 RSS Feed</h3>
+
+        <h4>步驟一：開啟 feed.xml 檔案</h4>
+        <p>使用文字編輯器開啟部落格根目錄下的 <code>feed.xml</code> 檔案。</p>
+
+        <h4>步驟二：新增文章項目</h4>
+        <p>在 <code>&lt;channel&gt;</code> 標籤內的<strong>第一個 <code>&lt;item&gt;</code> 之前</strong>加入新文章資訊：</p>
+
+        <pre>&lt;item&gt;
+    &lt;title&gt;文章標題&lt;/title&gt;
+    &lt;link&gt;https://yoursite.com/posts/資料夾名稱/index.html&lt;/link&gt;
+    &lt;guid&gt;https://yoursite.com/posts/資料夾名稱/index.html&lt;/guid&gt;
+    &lt;pubDate&gt;日期格式&lt;/pubDate&gt;
+    &lt;description&gt;文章簡述&lt;/description&gt;
+&lt;/item&gt;</pre>
+
+        <hr>
+
+        <h4>日期格式說明</h4>
+        <p>pubDate 使用 RFC 822 日期格式：</p>
+        <pre>Day, DD Mon YYYY HH:MM:SS +TZTZ</pre>
+        
+        <p><strong>範例：</strong></p>
+        <ul>
+            <li><code>Mon, 05 Jan 2026 00:00:00 +0800</code></li>
+            <li><code>Tue, 06 Jan 2026 12:30:00 +0800</code></li>
+        </ul>
+
+        <p><strong>星期縮寫：</strong>Mon、Tue、Wed、Thu、Fri、Sat、Sun</p>
+        <p><strong>月份縮寫：</strong>Jan、Feb、Mar、Apr、May、Jun、Jul、Aug、Sep、Oct、Nov、Dec</p>
+
+        <hr>
+
+        <h3>完整範例</h3>
+        <p>假設你新增了一篇 2026-01-06 的文章「學習 CSS 基礎」，資料夾名稱為 <code>2026-01-06-css-basics</code>：</p>
+
+        <pre>&lt;item&gt;
+    &lt;title&gt;學習 CSS 基礎&lt;/title&gt;
+    &lt;link&gt;https://yoursite.com/posts/2026-01-06-css-basics/index.html&lt;/link&gt;
+    &lt;guid&gt;https://yoursite.com/posts/2026-01-06-css-basics/index.html&lt;/guid&gt;
+    &lt;pubDate&gt;Mon, 06 Jan 2026 00:00:00 +0800&lt;/pubDate&gt;
+    &lt;description&gt;從零開始學習 CSS，包含選擇器、屬性和基本排版技巧。&lt;/description&gt;
+&lt;/item&gt;</pre>
+
+        <hr>
+
+        <h3>重要提醒</h3>
+        <ul>
+            <li>首次使用前，務必完成網域名稱和部落格資訊的設定（見上方說明）</li>
+            <li>新文章永遠加在最上面（第一個 &lt;item&gt;）</li>
+            <li>保持 XML 格式正確，注意標籤的開啟和關閉</li>
+        </ul>
+
+        <hr>
+
+        <h3>驗證 RSS Feed</h3>
+        <p>更新完成後，可以使用以下工具驗證 RSS feed 格式是否正確：</p>
+        <ul>
+            <li><a href="https://validator.w3.org/feed/" target="_blank">W3C Feed Validation Service</a></li>
+        </ul>
+    </article>
+</body>
+</html>
