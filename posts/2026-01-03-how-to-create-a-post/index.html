@@ -9,121 +9,49 @@
 <body>
     <p><a href="../index.html">&larr; 返回列表</a></p>
     <article>
-        <h2>如何新增一篇文章</h2>
-        <p><small>2026-01-03</small></p>
-        <hr>
-        <h3>前言</h3>
-        <p>本篇文章將教你如何在這個部落格中新增一篇文章。只需要簡單的幾個步驟，就能輕鬆發布新內容！</p>
+        <header>
+            <h2>如何新增一篇文章</h2>
+            <time>2026-01-03</time>
+        </header>
 
-        <h3>步驟概覽</h3>
-        <ol>
-            <li><strong>複製一份資料夾</strong>：選擇 <code>posts/</code> 中的任一文章資料夾並複製</li>
-            <li><strong>修改資料夾名稱</strong>：重新命名為 <code>YYYY-MM-DD-文章標題</code> 格式</li>
-            <li><strong>修改文章內容</strong>：編輯 <code>index.html</code> 中的標題、日期和內容</li>
-            <li><strong>更新文章列表</strong>：在 <code>posts/index.html</code> 中加入新文章的連結</li>
-        </ol>
-
-        <hr>
-
-        <h3>步驟一：複製一份資料夾</h3>
-        <p>首先，找到 <code>posts/</code> 資料夾中的任一篇現有文章資料夾，例如：</p>
+        <h3>步驟一：複製 Template</h3>
         <ul>
-            <li><code>2026-01-01-first-post/</code></li>
-            <li><code>2026-01-02-html-cheat-sheet/</code></li>
+            <li>找到 <code>posts/_template/</code> 資料夾</li>
+            <li>複製整個 <code>_template</code> 資料夾</li>
         </ul>
-        <p>選擇其中一個資料夾，將整個資料夾複製一份。</p>
 
         <hr>
 
-        <h3>步驟二：修改資料夾名稱</h3>
-        <p>將複製的資料夾重新命名，格式為：<code>YYYY-MM-DD-文章標題</code></p>
-        <p>例如：</p>
+        <h3>步驟二：重新命名資料夾</h3>
         <ul>
-            <li><code>2026-01-03-how-to-create-a-post</code></li>
+            <li>格式：<code>YYYY-MM-DD-文章標題</code></li>
+            <li>範例：<code>2026-01-03-how-to-create-a-post</code></li>
+            <li>使用英文和連字號，避免空格和特殊符號</li>
         </ul>
-        <p><strong>注意：</strong>資料夾名稱建議使用英文和連字號，避免使用空格和特殊符號。</p>
 
         <hr>
 
         <h3>步驟三：修改文章內容</h3>
-        <p>進入新建立的資料夾，打開 <code>index.html</code> 檔案，修改以下內容：</p>
-        
-        <h4>1. 修改標題（title）</h4>
-        <p>在 <code>&lt;head&gt;</code> 區塊中，找到 <code>&lt;title&gt;</code> 標籤並修改：</p>
-        <pre>&lt;title&gt;你的文章標題&lt;/title&gt;</pre>
-
-        <h4>2. 修改文章標題（h2）</h4>
-        <p>在 <code>&lt;article&gt;</code> 區塊中，找到 <code>&lt;h2&gt;</code> 標籤並修改：</p>
-        <pre>&lt;h2&gt;你的文章標題&lt;/h2&gt;</pre>
-
-        <h4>3. 修改日期</h4>
-        <p>找到日期標籤並修改為你的文章日期：</p>
-        <pre>&lt;p&gt;&lt;small&gt;2026-01-03&lt;/small&gt;&lt;/p&gt;</pre>
-
-        <h4>4. 修改文章內容</h4>
-        <p>編輯 <code>&lt;article&gt;</code> 標籤內的所有內容，加入你想要的文字、段落、列表等。</p>
-        <p>你可以參考 <a href="../2026-01-02-html-cheat-sheet/index.html">HTML 常用標籤</a> 來使用各種 HTML 元素。</p>
-
-        <hr>
-
-        <h3>選用：如何放入圖片</h3>
-        <p>在文章中加入圖片非常簡單，請按照以下步驟操作：</p>
-
-        <h4>1. 準備圖片檔案</h4>
-        <p>將你的圖片檔案（如 <code>image.jpg</code>、<code>photo.png</code>、<code>img.webp</code> 等）放入文章資料夾中，與 <code>index.html</code> 放在同一層。</p>
-
-        <h4>2. 使用 img 標籤</h4>
-        <p>在 HTML 檔案中，使用 <code>&lt;img&gt;</code> 標籤來顯示圖片：</p>
-        <pre>&lt;img src="你的圖片檔名.jpg" alt="圖片說明"&gt;</pre>
-
-        <h4>3. 圖片屬性說明</h4>
+        <p>開啟新資料夾中的 <code>index.html</code>，檔案中有 <code>&lt;!-- 修改這裡 --&gt;</code> 注釋標示，依照指示填寫：</p>
         <ul>
-            <li><strong>src：</strong>圖片檔案的路徑，如果圖片在同一資料夾中，直接寫檔名即可</li>
-            <li><strong>alt：</strong>圖片的替代文字，當圖片無法顯示時會顯示此文字，也有助於無障礙閱讀</li>
-            <li><strong>width/height：</strong>可選的尺寸屬性，例如 <code>width="500"</code> 可以設定圖片寬度</li>
+            <li><strong>&lt;title&gt;</strong> 和 <strong>&lt;h2&gt;</strong>：填入文章標題</li>
+            <li><strong>&lt;time&gt;</strong>：填入文章日期（格式：YYYY-MM-DD）</li>
+            <li><strong>&lt;article&gt;</strong> 內容：撰寫你的文章內容</li>
         </ul>
+        <p>參考 <a href="../2026-01-02-html-cheat-sheet/index.html">HTML 常用標籤</a> 來使用各種 HTML 元素</p>
 
         <hr>
 
-        <h3>步驟五：加入文章連結到列表</h3>
-        <p>完成文章撰寫後，需要將新文章加入到文章列表中，讓訪客能夠找到並閱讀你的文章。</p>
-
-        <h4>1. 開啟文章列表檔案</h4>
-        <p>找到並開啟 <code>posts/index.html</code> 檔案。</p>
-
-        <h4>2. 加入新文章連結</h4>
-        <p>在 <code>&lt;ul&gt;</code> 列表中，加入你的新文章。格式如下：</p>
+        <h3>步驟四：更新文章列表</h3>
+        <p>開啟 <code>posts/index.html</code>，在 <code>&lt;ul&gt;</code> 列表的<strong>最上方</strong>加入：</p>
         <pre>&lt;li&gt;
-    &lt;time&gt;2026-01-03&lt;/time&gt;
-    &lt;a href="2026-01-03-how-to-create-a-post/index.html"&gt;如何新增一篇文章&lt;/a&gt;
+    &lt;time&gt;日期&lt;/time&gt;
+    &lt;a href="資料夾名稱/index.html"&gt;文章標題&lt;/a&gt;
 &lt;/li&gt;</pre>
 
-        <h4>3. 注意事項</h4>
-        <ul>
-            <li>新文章應該放在列表的<strong>最上方</strong>（最新的文章在最前面）</li>
-            <li><code>&lt;time&gt;</code> 標籤中填入文章日期</li>
-            <li><code>href</code> 屬性要填入正確的資料夾路徑和檔名</li>
-            <li><code>&lt;a&gt;</code> 標籤中的文字就是顯示在列表中的文章標題</li>
-        </ul>
-
         <hr>
 
-        <h3>小提示</h3>
-        <ul>
-            <li>記得儲存所有修改過的檔案</li>
-            <li>可以在瀏覽器中開啟 <code>index.html</code> 預覽效果</li>
-            <li>養成良好的命名習慣，使用有意義的資料夾名稱和圖片檔名</li>
-            <li>定期備份你的資料夾</li>
-        </ul>
-
-        <hr>
-
-        <h3>結語</h3>
-        <p>現在你已經學會如何新增文章了！趕快試著創建你的第一篇文章吧。</p>
+        <p><strong>延伸閱讀：</strong><a href="../2026-01-04-how-to-add-images/index.html">如何在文章中加入圖片</a></p>
     </article>
-    <hr>
-    <footer>
-        <p><small>廢文小天地</small></p>
-    </footer>
 </body>
 </html>
