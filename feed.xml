@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
+        <!-- 部落格名稱 -->
         <title>廢文小天地</title>
+
+        <!-- 部落格網址：將 YOUR_DOMAIN_HERE 改為你的實際網域 -->
         <link>https://yoursite.com/</link>
+
+        <!-- 部落格簡介 -->
         <description>分享吃飯、睡覺、打東東的點點滴滴</description>
+
+        <!-- 部落格語言 -->
         <language>zh-Hant</language>
+
+        <!-- RSS Feed 網址：將 YOUR_DOMAIN_HERE 改為你的實際網域 -->
         <atom:link href="https://yoursite.com/feed.xml" rel="self" type="application/rss+xml"/>
         
         <item>
