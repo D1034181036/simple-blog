@@ -15,6 +15,14 @@
 
         <!-- RSS Feed 網址：將 YOUR_DOMAIN_HERE 改為你的實際網域 -->
         <atom:link href="https://yoursite.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+        <item>
+            <title>SSG 能幫你做到什麼？</title>
+            <link>https://yoursite.com/posts/2026-01-06-static-site-generators/index.html</link>
+            <guid>https://yoursite.com/posts/2026-01-06-static-site-generators/index.html</guid>
+            <pubDate>Tue, 06 Jan 2026 00:00:00 +0800</pubDate>
+            <description>整理靜態網站產生器（SSG）能幫你自動化的工作，包含文章頁、列表與 RSS 更新流程。</description>
+        </item>
         
         <item>
             <title>如何更新 RSS Feed</title>
